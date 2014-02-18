@@ -15,7 +15,6 @@ public GameStateManager gsm;
 public void create() {
 	
 	gsm = new GameStateManager();
-	
 }
 
 public void resize(int width, int height) {
