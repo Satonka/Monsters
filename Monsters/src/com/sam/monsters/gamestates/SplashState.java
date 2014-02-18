@@ -5,6 +5,9 @@ import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.utils.Timer;
+import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.Audio;
 import com.sam.monsters.managers.GameStateManager;
 
 public class SplashState extends GameState{
@@ -17,6 +20,8 @@ public class SplashState extends GameState{
 	public SpriteBatch batch;
 	public Texture splash;
 	public OrthographicCamera camera;
+	public Timer time;
+	public Sound theme;
 
 	@Override
 	public void init() {
@@ -25,13 +30,16 @@ public class SplashState extends GameState{
 		camera.setToOrtho(false, 800, 480);
 		batch = new SpriteBatch();
 		
-		splash = new Texture(Gdx.files.internal("BismuthGames.png"));
+		splash = new Texture(Gdx.files.internal("assets/BismuthGames.png"));
+		
+		theme = Gdx.audio.newSound(Gdx.files.internal("assets/Bismuth.mp3"));
+		theme.play();
 	}
 
 	@Override
 	public void update(float dt) {
 		if(Gdx.input.isTouched()){
-			gsm.setState(gsm.MENU);
+			gsm.setState(GameStateManager.MENU);
 		}
 	}
 
