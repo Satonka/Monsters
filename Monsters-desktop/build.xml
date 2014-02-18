@@ -1,0 +1,34 @@
+<project name="monsters" default="dist">
+
+    <property name="libs.dir" value="libs" />
+    <property name="main.libs.dir" value="../Monsters/libs" />
+    <property name="main.src" value="../Monsters/src" />
+    <target name="build">
+        <path id="javac.classpath">
+            <fileset dir="${libs.dir}">
+                <include name="**/*.jar" />
+            </fileset>
+            
+            <fileset dir="${main.libs.dir}">
+                <include name="**/*.jar" />
+            </fileset>
+        </path>
+        <javac
+            srcdir="src"
+            destdir="bin"
+            classpathref="javac.classpath">
+            <src path="${main.src}"/>
+        </javac>
+    </target>
+    <target name="dist" depends="build">
+        <jar 
+            destfile="monsters.jar"
+            basedir="bin">
+            <zipgroupfileset dir="${libs.dir}" includes="*.jar" />
+            <zipgroupfileset dir="${main.libs.dir}" includes="*.jar" />
+            <manifest>
+                <attribute name="Main-Class" value="com.sam.monsters.Main" />
+            </manifest>
+        </jar>
+    </target>
+</project>
