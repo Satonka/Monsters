@@ -14,7 +14,7 @@ public class GameStateManager {
 	public static final int SPLASH = 0;
 	
 	public GameStateManager(){
-		setState(SPLASH);
+		setState(MENU);
 	}
 	
 	public void setState(int state){

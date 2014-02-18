@@ -36,7 +36,7 @@ public class SplashState extends GameState{
 		
 		timeStart = System.currentTimeMillis();
 		
-		theme = Gdx.audio.newSound(Gdx.files.internal("assets/Bismuth.mp3"));
+		theme = Gdx.audio.newSound(Gdx.files.internal("Bismuth.mp3"));
 		theme.play();
 
 	}

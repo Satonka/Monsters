@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.badlogic.gdx.audio.Sound"/>
+<fullyQualifiedTypeName name="inGameMenus.Menu"/>
+<fullyQualifiedTypeName name="inGameMenus.MainMenu"/>
+<fullyQualifiedTypeName name="inGameMenus.AttackMenu"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.ui.TextButton"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g2d.SpriteBatch"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.ui.Skin"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.utils.ChangeListener"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.utils.ChangeListener.ChangeEvent"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.Actor"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.ui.Window"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.ui.Table"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.Gdx"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.scenes.scene2d.Stage"/>
+<fullyQualifiedTypeName name="com.sam.monsters.managers.MenuManager"/>
 </qualifiedTypeNameHistroy>

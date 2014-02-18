@@ -5,14 +5,14 @@ import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.sam.monsters.managers.GameStateManager;
+import com.sam.monsters.managers.MenuManager;
 
 public class PlayState extends GameState{
 	
-	public SpriteBatch batch;
-	public Texture oak;
-	public BitmapFont font;
-	public CharSequence str = "Welcome to the Pokemon World";
+	public MenuManager menuManager;
+	public Stage stage;
 
 	public PlayState(GameStateManager gsm) {
 		super(gsm);
@@ -21,11 +21,10 @@ public class PlayState extends GameState{
 
 	@Override
 	public void init() {
-		batch = new SpriteBatch();
-		
-		oak = new Texture(Gdx.files.internal("oak.png"));
-		
-		font = new BitmapFont(Gdx.files.internal("default.fnt"), Gdx.files.internal("default.png"), false);
+		menuManager = new MenuManager();
+		menuManager.getMenu().init();
+		menuManager.getMenu().draw();
+		Gdx.input.setInputProcessor(menuManager.getMenu().stage);
 	}
 
 	@Override
@@ -39,13 +38,9 @@ public class PlayState extends GameState{
 		Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
         
-        batch.begin();
-        font.draw(batch, str, 100, 100);
-        batch.end();
-        
-        batch.begin();
-        batch.draw(oak, 240-32, 160);
-        batch.end();
+        Gdx.input.setInputProcessor(menuManager.getMenu().stage);
+        menuManager.getMenu().draw();
+		
 	}
 
 	@Override

@@ -1,0 +1,57 @@
+package inGameMenus;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
+import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
+import com.badlogic.gdx.scenes.scene2d.ui.Window;
+
+public class AttackMenu extends Menu {
+	
+	public AttackMenu(){
+		
+	}
+
+	@Override
+	public void init() {
+		batch = new SpriteBatch();
+        stage = new Stage();
+
+        skin = new Skin(Gdx.files.internal("uiskin.json"));
+
+        table = new Table();
+
+        
+        window = new Window("MAIN", skin);
+        window.add(table);
+        
+        stage.addActor(window);
+        
+        button =  new TextButton("BACK", skin);
+		table.row();
+		table.add(button);
+	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+}
