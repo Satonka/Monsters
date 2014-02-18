@@ -3,6 +3,7 @@
     <property name="libs.dir" value="libs" />
     <property name="main.libs.dir" value="../Monsters/libs" />
     <property name="main.src" value="../Monsters/src" />
+    <property name="assets" value="../Monsters-android/assets" /> 
     <target name="build">
         <path id="javac.classpath">
             <fileset dir="${libs.dir}">
@@ -26,6 +27,7 @@
             basedir="bin">
             <zipgroupfileset dir="${libs.dir}" includes="*.jar" />
             <zipgroupfileset dir="${main.libs.dir}" includes="*.jar" />
+            <fileset dir="${assets}" />
             <manifest>
                 <attribute name="Main-Class" value="com.sam.monsters.Main" />
             </manifest>
