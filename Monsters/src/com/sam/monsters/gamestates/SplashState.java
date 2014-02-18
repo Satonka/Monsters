@@ -25,13 +25,13 @@ public class SplashState extends GameState{
 		camera.setToOrtho(false, 800, 480);
 		batch = new SpriteBatch();
 		
-		splash = new Texture(Gdx.files.internal("BismuthGames.png"));
+		splash = new Texture(Gdx.files.internal("assets/BismuthGames.png"));
 	}
 
 	@Override
 	public void update(float dt) {
 		if(Gdx.input.isTouched()){
-			gsm.setState(gsm.MENU);
+			gsm.setState(GameStateManager.MENU);
 		}
 	}
 
