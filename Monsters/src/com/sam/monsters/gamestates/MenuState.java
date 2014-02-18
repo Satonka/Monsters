@@ -30,7 +30,7 @@ public class MenuState extends GameState{
         stage = new Stage();
         Gdx.input.setInputProcessor(stage);
         
-        skin = new Skin(Gdx.files.internal("assets/uiskin.json"));
+        skin = new Skin(Gdx.files.internal("uiskin.json"));
         
         Table table = new Table();
         table.setFillParent(true);

@@ -2,11 +2,15 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/Monsters"/>
-	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
-	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
-	<classpathentry kind="lib" path="C:/Users/Oliver/Downloads/libgdx-0.9.9/gdx-backend-android.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Oliver/Downloads/libgdx-0.9.9/gdx.jar"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry exported="true" kind="lib" path="/Monsters/libs/gdx.jar" sourcepath="/Monsters/libs/gdx-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="file:/C:/Users/sam/Downloads/libgdx-0.9.9/docs/api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="C:/Users/sam/Downloads/libgdx-0.9.9/gdx-backend-android.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

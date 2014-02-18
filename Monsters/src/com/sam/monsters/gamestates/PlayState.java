@@ -23,9 +23,9 @@ public class PlayState extends GameState{
 	public void init() {
 		batch = new SpriteBatch();
 		
-		oak = new Texture(Gdx.files.internal("assets/oak.png"));
+		oak = new Texture(Gdx.files.internal("oak.png"));
 		
-		font = new BitmapFont(Gdx.files.internal("assets/default.fnt"), Gdx.files.internal("assets/default.png"), false);
+		font = new BitmapFont(Gdx.files.internal("default.fnt"), Gdx.files.internal("default.png"), false);
 	}
 
 	@Override
