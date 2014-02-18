@@ -7,5 +7,6 @@
 			<attribute name="javadoc_location" value="file:/C:/Users/sam/Downloads/libgdx-0.9.9/docs/api/"/>
 		</attributes>
 	</classpathentry>
+
 	<classpathentry kind="output" path="bin"/>
 </classpath>
