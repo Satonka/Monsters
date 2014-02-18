@@ -10,7 +10,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
-import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener.ChangeEvent;
 import com.sam.monsters.managers.GameStateManager;
 
 public class MenuState extends GameState{
@@ -31,7 +30,7 @@ public class MenuState extends GameState{
         stage = new Stage();
         Gdx.input.setInputProcessor(stage);
         
-        skin = new Skin(Gdx.files.internal("uiskin.json"));
+        skin = new Skin(Gdx.files.internal("assets/uiskin.json"));
         
         Table table = new Table();
         table.setFillParent(true);

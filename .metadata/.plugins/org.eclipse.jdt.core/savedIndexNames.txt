@@ -1,0 +1,24 @@
+INDEX VERSION 1.126+C:\Users\sam\Documents\GitHub\Monsters\.metadata\.plugins\org.eclipse.jdt.core
+30765161.index
+816025494.index
+4108727661.index
+3974580528.index
+1115467115.index
+258073531.index
+163172794.index
+3645885797.index
+3378785720.index
+4196710587.index
+1498219845.index
+1995173708.index
+2889423426.index
+305854171.index
+1138899404.index
+1260423294.index
+4155206848.index
+4041092966.index
+3133528496.index
+4282545390.index
+937732555.index
+1299022128.index
+3065916431.index
